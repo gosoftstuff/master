@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="/home/darren/softstuff/master/customer_num.list">
+      <field name="name">/home/darren/softstuff/master/CustomerNum list</field>
+      <field name="model">/home/darren/softstuff/master/customer_num./home/darren/softstuff/master/customer_num</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="/home/darren/softstuff/master/customer_num.action_window">
+      <field name="name">/home/darren/softstuff/master/CustomerNum window</field>
+      <field name="res_model">/home/darren/softstuff/master/customer_num./home/darren/softstuff/master/customer_num</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="/home/darren/softstuff/master/customer_num.action_server">
+      <field name="name">/home/darren/softstuff/master/CustomerNum server</field>
+      <field name="model_id" ref="model_/home/darren/softstuff/master/customer_num_/home/darren/softstuff/master/customer_num"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="/home/darren/softstuff/master/CustomerNum" id="/home/darren/softstuff/master/customer_num.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="/home/darren/softstuff/master/customer_num.menu_1" parent="/home/darren/softstuff/master/customer_num.menu_root"/>
+    <menuitem name="Menu 2" id="/home/darren/softstuff/master/customer_num.menu_2" parent="/home/darren/softstuff/master/customer_num.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="/home/darren/softstuff/master/customer_num.menu_1_list" parent="/home/darren/softstuff/master/customer_num.menu_1"
+              action="/home/darren/softstuff/master/customer_num.action_window"/>
+    <menuitem name="Server to list" id="/home/darren/softstuff/master/customer_num" parent="/home/darren/softstuff/master/customer_num.menu_2"
+              action="/home/darren/softstuff/master/customer_num.action_server"/>
+    -->
+  </data>
+</odoo>
